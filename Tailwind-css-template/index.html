@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login-signup</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    </head>
+    <body>
+        <div class="jumbo">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2 "></div>
+                    <div class="col-md-8 col-12">
+                        <div class="form-box">
+                            <div class="button-box">
+                                <div id="btn"></div>
+                                
+                                <button type="button" class="toggle-btn" onclick="login()">Login</button>
+                                <button type="button" class="toggle-btn float-right" onclick="register()">Register</button>
+                            </div>
+                            <div class="social-icons">
+                               <a href="#"><img src="img/fb.png" alt="facebook"></a>
+                               <a href="#"><img src="img/tw.png" alt="twitter"></a>
+                                <a href="#"> <img src="img/gp.png" alt="google"></a>
+                            </div>
+                            <form action="/sign_up" class="input-group" id="register">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Email address</label>
+                                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email" required>
+                                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Password</label>
+                                    <input type="password" class="form-control" id="password" placeholder="Password" required>
+                                </div>
+                                <button type="submit" class="submit-btn " id="submitDetails"  
+                                name="submitDetails" value="Submit" >Register</button>
+                            </form>
+                            <form  class="input-group" id="login" style="bottom: 250px;">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Email address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
+                                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Password</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
+                                </div>
+                                <button type="submit" class="submit-btn ">Login</button>
+                                
+                            </form>
+                            
+                        </div>
+                    </div>
+                   
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>    
+            </div>
+            
+        </div>
+       
+        <script src="js/index.js"></script>
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </body>
+</html>
